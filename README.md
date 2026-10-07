@@ -1,4 +1,4 @@
-# Programacio-Iris
+# 🦄Programacio-Iris™︎🦄
 Projectes de l'assignatura de primer de Batxillerat - El Calamot.
 
 Nom - Iris
@@ -9,5 +9,4 @@ Modalitat - Tecnològic
 Presentació:
 M'agrada aprendre coses noves. :V
 
-Prova de còmic:
 ![alt text](image.png)
