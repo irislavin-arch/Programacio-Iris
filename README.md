@@ -8,3 +8,6 @@ Modalitat - Tecnològic
 
 Presentació:
 M'agrada aprendre coses noves. :V
+
+Prova de còmic:
+![alt text](image.png)
