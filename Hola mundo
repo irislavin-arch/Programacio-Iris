@@ -1,1 +1,4 @@
-
+print('hola mundo')
+print('Escriu la teva edat')
+input()
+print('Tienes 600 años')
