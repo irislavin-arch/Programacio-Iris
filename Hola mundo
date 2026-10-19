@@ -1,31 +1,8 @@
-print('Quin es el teu nom?')
-nom=input()
-print('hola', nom)
+print('Quin és el teu nom?\n')
+nom=input('')
+print('Hola',nom, '\n')
 
-num=1
-print(num)
-
-num=2.5
-print(num)  
-
-num='ups'
-print(num)
-
-variable1='57'
-
-print(variable1)
-print(2+2)
-
-#print(2+variable1)
-variable2=int(variable1)
-
-print(variable2)
-print(2+variable2)
-
-print('hola mundo')
-print('Escriu la teva edat')
-edat=input()
-print('tienes', edat, 'años')
-year=int(input('en quin any vas neixer?'))
-
-print('hola', nom, 'tens', 2026-year, 'anys')
+print('En quin any vas neixer?')
+años=int(input(''))
+años=2026-años
+print('Tienes', años, 'años')
