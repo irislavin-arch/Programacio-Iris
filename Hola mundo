@@ -6,3 +6,5 @@ print('En quin any vas neixer?')
 años=int(input(''))
 años=2026-años
 print('Tienes', años, 'años')
+
+print("Hola mundo")
