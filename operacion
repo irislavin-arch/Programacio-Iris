@@ -1,4 +1,4 @@
-print('Quins és el teu primer número?\n')
+print('Quin és el teu primer número?\n')
 variable1=input('')
 print('Quin és el teu segon número?\n')
 variable2=input('')

@@ -1,0 +1,31 @@
+print('Quin és el teu primer número?\n')
+n1=int(input(''))
+print('Quin és el teu segon número?\n')
+n2=int(input(''))
+print('Suma:', n1 + n2)
+print('Resta:', n1 - n2)
+print('Resta inversa:', n2 - n1)
+print('Producte:', n1 * n2)
+print('Divisió:', n1 / n2)
+print('Divisió inversa:', n2 / n1)
+print('Mòdul:', n1 % n2)
+print('Mòdul invers:', n2 % n1)
+print('Divisió entera:', n1 // n2)
+print('Divisió entera inversa:', n2 // n1)
+print('Potència:', n1 ** n2)
+print('Potència inversa:', n2 ** n1)
+
+t1=input('Escriu un text\n')
+t2=input('Escriu un altre text\n')
+
+print('\n\033[4mOPERACIONS AMB CARÀCTERS\033[0m\n')
+print('Concentrar:',t1+t2,'\n')
+print('Multiplicació:',t1*3,'\n')
+
+num=1
+num=2
+print(num)
+num=num+1
+print(num)
+num+=1
+print(num)
