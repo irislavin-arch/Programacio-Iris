@@ -1,7 +1,10 @@
+#Números
 print('Quin és el teu primer número?\n')
 n1=int(input(''))
 print('Quin és el teu segon número?\n')
 n2=int(input(''))
+'''
+print('\n\033[4mOPERACIONS AMB NÚMEROS\033[0m\n')
 print('Suma:', n1 + n2)
 print('Resta:', n1 - n2)
 print('Resta inversa:', n2 - n1)
@@ -15,13 +18,6 @@ print('Divisió entera inversa:', n2 // n1)
 print('Potència:', n1 ** n2)
 print('Potència inversa:', n2 ** n1)
 
-t1=input('Escriu un text\n')
-t2=input('Escriu un altre text\n')
-
-print('\n\033[4mOPERACIONS AMB CARÀCTERS\033[0m\n')
-print('Concentrar:',t1+t2,'\n')
-print('Multiplicació:',t1*3,'\n')
-
 num=1
 num=2
 print(num)
@@ -29,3 +25,23 @@ num=num+1
 print(num)
 num+=1
 print(num)
+'''
+
+#Intercanvi de variables
+print('La primera variable val:',n1,'\n')
+print('La segona variable val:',n2,'\n')
+aux=n1 # Variable auxiliar
+n1=n2
+n2=aux
+print('Ara la primera variable val:',n1,'\n')
+print('Ara la segona variable val:',n2,'\n')
+
+#Textos
+t1=input('Escriu un text\n')
+t2=input('Escriu un altre text\n')
+
+print('\n\033[4mOPERACIONS AMB CARÀCTERS\033[0m\n')
+print('Concentrar:',t1+t2,'\n')
+print('Multiplicació:',t1*3,'\n')
+
+print("")
