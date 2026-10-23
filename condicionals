@@ -1,0 +1,18 @@
+print('Quin és el teu primer número?\n')
+n1=int(input(''))
+print('Quin és el teu segon número?\n')
+n2=int(input(''))
+suma=n1+n2
+
+if suma > 10:
+    print('La suma dels dos números és més gran que 10\n')
+else:
+    print('La suma dels dos números no és més gran que 10\n')
+
+
+#simplificació de l'if en una linia   
+#if (suma) > 10: print('La suma dels dos números és més gran que 10\n')
+
+
+if (suma) > 8 or (suma) < 4:
+    print('La suma és més gran que 8 o més petita que 4\n')
