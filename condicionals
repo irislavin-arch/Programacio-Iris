@@ -24,4 +24,4 @@ if (suma) > 12 and (suma) < 18:
 # Operador not (no)
 if not (suma) == 13:
     print('La suma dels dos números no és 13\n')
-elif (suma) ==15: print('La suma dels dos números és 15\n') #En comptes de fer un if + un else, posar un elif
+elif (suma) ==15: print('La suma dels dos números és 15\n')
