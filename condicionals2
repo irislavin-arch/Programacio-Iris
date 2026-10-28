@@ -3,7 +3,7 @@ n1=int(input(''))
 print('Quin és el teu segon número?\n')
 n2=int(input(''))
 
-operacio=input('Quina operació vols realitzar? ')
+operacio=input('Vols fer una suma, resta, resta inversa, multiplicació, divisió, divisió inversa, mòdul, mòdul invers, divisió entera, divisió entera inversa, potència o potència inversa? ')
 if operacio == 'suma':
     print('Suma:', n1 + n2)
 elif operacio == 'resta':
