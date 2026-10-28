@@ -1,0 +1,30 @@
+print('Quin és el teu primer número?\n')
+n1=int(input(''))
+print('Quin és el teu segon número?\n')
+n2=int(input(''))
+
+operacio=input('Quina operació vols realitzar? ')
+if operacio == 'suma':
+    print('Suma:', n1 + n2)
+elif operacio == 'resta':
+    print('Resta:', n1 - n2)
+elif operacio == 'resta inversa':
+    print('Resta inversa:', n2 - n1)
+elif operacio == 'multiplicació':
+    print('Multiplicació:', n1 * n2)
+elif operacio == 'divisió':
+    print('Divisió:', n1 / n2)
+elif operacio == 'divisió inversa':
+    print('Divisió inversa:', n2 / n1)
+elif operacio == 'mòdul':
+    print('Mòdul:', n1 % n2)
+elif operacio == 'mòdul invers':
+    print('Mòdul invers:', n2 % n1)
+elif operacio == 'divisió entera':
+    print('Divisió entera:', n1 // n2)
+elif operacio == 'divisió entera inversa':
+    print('Divisió entera inversa:', n2 // n1)
+elif operacio == 'potència':
+    print('Potència:', n1 ** n2)
+elif operacio == 'potència inversa':
+    print('Potència inversa:', n2 ** n1)
