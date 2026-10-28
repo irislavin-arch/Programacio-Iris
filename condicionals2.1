@@ -1,0 +1,68 @@
+
+
+print('Quin és el teu primer número?\n')
+n1 = int(input())
+
+print('Quin és el teu segon número?\n')
+n2 = int(input())
+
+operacio = input('Quina operació vols fer? (suma, resta, multiplicació, divisió, mòdul, divisió entera o potència)\n')
+
+ordre = input("Vols que en l'operació vagi primer el primer número o el segon?\nEscriu 'el primer' o 'el segon': ")
+
+if operacio == 'suma':
+    print('Suma:', n1 + n2)
+
+elif operacio == 'resta':
+    if ordre == 'el primer':
+        print('Resta:', n1 - n2)
+    elif ordre == 'el segon':
+        print('Resta inversa:', n2 - n1)
+
+elif operacio == 'multiplicació':
+    print('Multiplicació:', n1 * n2)
+
+elif operacio == 'divisió':
+    if ordre == 'el primer':
+        if n2 != 0:
+            print('Divisió:', n1 / n2)
+        else:
+            print('No es pot dividir entre zero.')
+    elif ordre == 'el segon':
+        if n1 != 0:
+            print('Divisió inversa:', n2 / n1)
+        else:
+            print('No es pot dividir entre zero.')
+
+elif operacio == 'mòdul':
+    if ordre == 'el primer':
+        if n2 != 0:
+            print('Mòdul:', n1 % n2)
+        else:
+            print('No es pot calcular el mòdul amb zero.')
+    elif ordre == 'el segon':
+        if n1 != 0:
+            print('Mòdul invers:', n2 % n1)
+        else:
+            print('No es pot calcular el mòdul amb zero.')
+
+elif operacio == 'divisió entera':
+    if ordre == 'el primer':
+        if n2 != 0:
+            print('Divisió entera:', n1 // n2)
+        else:
+            print('No es pot dividir entre zero.')
+    elif ordre == 'el segon':
+        if n1 != 0:
+            print('Divisió entera inversa:', n2 // n1)
+        else:
+            print('No es pot dividir entre zero.')
+
+elif operacio == 'potència':
+    if ordre == 'el primer':
+        print('Potència:', n1 ** n2)
+    elif ordre == 'el segon':
+        print('Potència inversa:', n2 ** n1)
+
+else:
+    print('Operació no reconeguda.')
