@@ -1,0 +1,70 @@
+
+print('Quin és el teu primer número?\n')
+n1 = int(input())
+
+print('Quin és el teu segon número?\n')
+n2 = int(input())
+
+operacio = input('Quina operació vols fer? (suma (s), resta (r), multiplicació (m), divisió (d), mòdul (mo), divisió entera (de) o potència (p))\n')
+
+if operacio == 's':
+    print('Suma:', n1+n2)
+
+if operacio == 'r':
+    r = input('Heu escollit n1-n2, voleu canviar el ordre (y/n)?\n')
+    if r == 'y':
+        print('Resta:', n2-n1)
+    elif r == 'n':
+        print('Resta:', n1-n2)
+
+if operacio == 'm':
+    print('Multiplicació:', n1*n2)
+
+if operacio == 'd':
+    d = input('Heu escollit n1/n2, voleu canviar el ordre (y/n)?\n')
+    if d == 'y':
+        if n1 == 0:
+            print('No es pot dividir entre zero.')
+        else:
+            print('Divisió:', n2/n1)
+
+    elif d == 'n':
+        if n2 == 0:
+            print('No es pot dividir entre zero.')
+        else:
+            print('Divisió:', n1/n2)
+
+if operacio == 'mo':
+    mo = input('Heu escollit n1%n2, voleu canviar el ordre (y/n)?\n')
+    if mo == 'y':
+        if n1 == 0:
+            print('No es pot calcular el mòdul amb zero.')
+        else:
+            print('Mòdul:', n2%n1)
+
+    elif mo == 'n':
+        if n2 == 0:
+            print('No es pot calcular el mòdul amb zero.')
+        else:
+            print('Mòdul:', n1%n2)
+
+if operacio == 'de':
+    de = input('Heu escollit n1//n2, voleu canviar el ordre (y/n)?\n')
+    if de == 'y':
+        if n1 == 0:
+            print('No es pot dividir entre zero.')
+        else:
+            print('Divisió entera:', n2//n1)
+
+    elif de == 'n':
+        if n2 == 0:
+            print('No es pot dividir entre zero.')
+        else:
+            print('Divisió entera:', n1//n2)
+
+if operacio == 'p':
+    p = input('Heu escollit n1**n2, voleu canviar el ordre (y/n)?\n')
+    if p == 'y':
+        print('Potència:', n2**n1)
+    elif p == 'n':
+        print('Potència:', n1**n2)
