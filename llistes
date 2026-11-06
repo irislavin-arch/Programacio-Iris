@@ -43,3 +43,7 @@ if lletra_escrita==lletra_correcta:
 else:
     print('Està malament. La lletra correcta és:', lletra_correcta)
     print('El DNI correcte seria:',dni[:8]+lletra_correcta)
+
+print('La llista és:', llista)
+llista.append('gat')
+print(llista)
