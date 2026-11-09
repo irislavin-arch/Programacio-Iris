@@ -1,4 +1,4 @@
-'''
+
 #conjunt de dades ordenades/per guardar més d'una variable relacionades
 llista=[2, 'Hola', 3.5]
 print(llista[0])
@@ -25,7 +25,6 @@ del llista[2]
 print(llista)
 
 llista[2]=""
-'''
 
 
 dni=input('Escriu el teu DNI complet i sense espais\n')
@@ -44,6 +43,13 @@ else:
     print('Està malament. La lletra correcta és:', lletra_correcta)
     print('El DNI correcte seria:',dni[:8]+lletra_correcta)
 
+
+#Funció append
 print('La llista és:', llista)
 llista.append('gat')
+print(llista)
+
+#Funció insert
+print('La llista és:', llista)
+llista.insert(1, 'gos')
 print(llista)

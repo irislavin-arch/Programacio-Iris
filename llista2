@@ -1,0 +1,21 @@
+print('Quin és el teu primer número?\n')
+n1 = int(input())
+
+print('Quin és el teu segon número?\n')
+n2 = int(input())
+
+print('Quin és el teu tercer número?\n')
+n3 = int(input())
+
+print('Quin és el teu cuart número?\n')
+n4 = int(input())
+
+llista=[n1, n2, n3, n4]
+llista.sort()
+print('Els números ordenats de menor a major són:', llista)
+print('Voleu la llista ordenada de major a menor (y/n)?\n')
+if input() == 'y':
+    llista.sort(reverse=True)
+    print('Els números ordenats de major a menor són:', llista)
+elif input() == 'n':
+    print('Els números ordenats de menor a major segueixen sent:', llista)
