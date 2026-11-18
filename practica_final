@@ -1,0 +1,15 @@
+import random
+llista=random.sample(range(1,7),4)
+numero_intents=10
+while True:
+    num=input('Esbrina i introdueix una combinació de 4 números (1-6), sense repetir cap. Tens 10 intents: ')
+    if(num==llista[:4]):
+        print('Has encertat!')
+        break
+    elif(num!=llista[:4]):
+         print('No has encertat, torna-ho a intentar')
+         numero_intents-=1
+         if numero_intents==0:
+             print('Has esgotat els intents, la combinació correcta era:', llista[:4])
+             break
+         print('Et queden', numero_intents, 'intents')
