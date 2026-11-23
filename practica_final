@@ -2,8 +2,10 @@ import random
 llista=random.sample(range(1,7),4) #Per extreure una mostra aleatòria d'una llista
 numero_intents=10
 
+print('Esbrina i introdueix una combinació de 4 números (1-6), sense repetir cap. Se t donaràn pistes de cada número individualment (B: correcte, R: correcte però en una altra posició, M: incorrecte). Tens 10 intents (Ex: 1234): ')
+
 while numero_intents>0:
-    num=input('Esbrina i introdueix una combinació de 4 números (1-6), sense repetir cap. Se t donaràn psuites de cada número individualment(B: correcte, R: correcte però en una altra posició, M: incorrecte). Tens 10 intents (Ex: 1234): ')
+    num=input('Introdueix una combinació: ')
 
     if len(num)!=4 or not num.isdigit() or '0' in num or '7' in num or '8' in num or '9' in num: #Comprova que hi hagi 4 caràcters numèrics i que siguin del 1 al 6
         print('Introdueix exactament 4 números del 1 al 6')
@@ -28,11 +30,11 @@ while numero_intents>0:
         numero=int(num[i]) #Agafa cada número de la combinació introduïda
 
         if numero==llista[i]:
-            print('B') #El número és correcte i està en la posició correcta
+            print('Primer número:', numero, '- Pista: B') #El número és correcte i està en la posició correcta
         elif numero in llista:
-            print('R') #El número és correcte però està en una altra posició
+            print('Primer número:', numero, '- Pista: R') #El número és correcte però està en una altra posició
         else:
-            print('M') #El número no forma part de la combinació
+            print('Primer número:', numero, '- Pista: M') #El número no forma part de la combinació
 
     numero_intents-=1
 
