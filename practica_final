@@ -1,15 +1,38 @@
 import random
-llista=random.sample(range(1,7),4)
+llista=random.sample(range(1,7),4) #Per extreure una mostra aleatòria d'una llista
 numero_intents=10
-while True:
+
+while numero_intents>0:
     num=input('Esbrina i introdueix una combinació de 4 números (1-6), sense repetir cap. Tens 10 intents: ')
-    if(num==llista[:4]):
+
+    if len(num)!=4 or not num.isdigit(): #Comprueba que s'introdueixin 4 números
+        print('Introdueix exactament 4 números')
+        continue #Torna a començar el bucle sense restar un intent
+
+    numero1=int(num[0])
+    numero2=int(num[1])
+    numero3=int(num[2])
+    numero4=int(num[3])
+
+    if [numero1,numero2,numero3,numero4]==llista: #Compara les dues llistes
         print('Has encertat!')
         break
-    elif(num!=llista[:4]):
-         print('No has encertat, torna-ho a intentar')
-         numero_intents-=1
-         if numero_intents==0:
-             print('Has esgotat els intents, la combinació correcta era:', llista[:4])
-             break
-         print('Et queden', numero_intents, 'intents')
+
+    print('No has encertat, torna-ho a intentar')
+
+    for i in range(4): #Repeteix les comprovacions 4 vegades
+        numero=int(num[i]) #Agafa cada número de la combinació introduïda
+
+        if numero==llista[i]:
+            print('El número',i+1,'és correcte')
+        elif numero in llista:
+            print('El número',i+1,'és correcte, però no està en la posició correcta')
+        else:
+            print('El número',i+1,'és incorrecte')
+
+    numero_intents-=1
+
+    if numero_intents==0:
+        print('Has esgotat els intents, la combinació correcta era:',llista)
+    else:
+        print('Et queden',numero_intents,'intents')
