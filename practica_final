@@ -3,7 +3,7 @@ llista=random.sample(range(1,7),4) #Per extreure una mostra aleatòria d'una lli
 numero_intents=10
 
 while numero_intents>0:
-    num=input('Esbrina i introdueix una combinació de 4 números (1-6), sense repetir cap. Tens 10 intents: ')
+    num=input('Esbrina i introdueix una combinació de 4 números (1-6), sense repetir cap. Tens 10 intents (Ej: 1234): ')
 
     if len(num)!=4 or not num.isdigit(): #Comprueba que s'introdueixin 4 números
         print('Introdueix exactament 4 números')
