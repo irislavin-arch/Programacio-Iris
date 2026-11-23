@@ -3,11 +3,15 @@ llista=random.sample(range(1,7),4) #Per extreure una mostra aleatòria d'una lli
 numero_intents=10
 
 while numero_intents>0:
-    num=input('Esbrina i introdueix una combinació de 4 números (1-6), sense repetir cap. Tens 10 intents (Ej: 1234): ')
+    num=input('Esbrina i introdueix una combinació de 4 números (1-6), sense repetir cap. Se t donaràn psuites de cada número individualment(B: correcte, R: correcte però en una altra posició, M: incorrecte). Tens 10 intents (Ex: 1234): ')
 
-    if len(num)!=4 or not num.isdigit(): #Comprueba que s'introdueixin 4 números
-        print('Introdueix exactament 4 números')
+    if len(num)!=4 or not num.isdigit() or '0' in num or '7' in num or '8' in num or '9' in num: #Comprova que hi hagi 4 caràcters numèrics i que siguin del 1 al 6
+        print('Introdueix exactament 4 números del 1 al 6')
         continue #Torna a començar el bucle sense restar un intent
+
+    if len(set(num))!=4: #set() elimina els elements repetits i len() compta quants en queden
+        print('No pots repetir cap número')
+        continue
 
     numero1=int(num[0])
     numero2=int(num[1])
@@ -24,11 +28,11 @@ while numero_intents>0:
         numero=int(num[i]) #Agafa cada número de la combinació introduïda
 
         if numero==llista[i]:
-            print('El número',i+1,'és correcte')
+            print('B') #El número és correcte i està en la posició correcta
         elif numero in llista:
-            print('El número',i+1,'és correcte, però no està en la posició correcta')
+            print('R') #El número és correcte però està en una altra posició
         else:
-            print('El número',i+1,'és incorrecte')
+            print('M') #El número no forma part de la combinació
 
     numero_intents-=1
 
